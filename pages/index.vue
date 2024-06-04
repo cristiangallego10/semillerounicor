@@ -1,4 +1,5 @@
 <script></script>
 <template>
-  <div></div>
+  <div>PROGRAMAS</div>
+  <Programs />
 </template>
