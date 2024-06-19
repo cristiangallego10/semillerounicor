@@ -1,7 +1,5 @@
 <script setup>
-const puntales = definirProps({
- programas: Objeto	});
- estudiante = ref(puntales.semillero.integrantes.estudiantes[0]);
+
 </script>
 
 <template>
