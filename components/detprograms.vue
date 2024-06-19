@@ -1,14 +1,9 @@
 <script setup>
-const programas={
-    programa: "EduTLan",
-    Facultad: "Educación y Ciencias Humanas",
-    semilleros: [
-            "AVI",
-            "Laboratorio IA",
-    ]
-}
-
+const puntales = definirProps({
+ programas: Objeto	});
+ estudiante = ref(puntales.semillero.integrantes.estudiantes[0]);
 </script>
+
 <template>
     <h1>programas</h1>
 
@@ -21,7 +16,7 @@ const programas={
                 <template #header>
                     <div class="flex align-items-center gap-2">
                         <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" shape="circle" />
-                        <span class="font-bold white-space-nowrap"> {{ programas.programa }}</span>
+                        <span class="font-bold white-space-nowrap"> {{ programas.programa[0] }}</span>
                       </div>
                 </template>
                 <p class="m-0">

@@ -1,5 +1,7 @@
-<script></script>
+<script>
+</script>
 <template>
   <div>PROGRAMAS</div>
-  <Programs />
+  <Nuxt></Nuxt>
+  <detprograms />
 </template>
