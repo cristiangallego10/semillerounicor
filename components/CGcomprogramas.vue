@@ -1,5 +1,9 @@
 <script setup>
 
+const props = definirprops({
+    programa: Object
+});
+
 </script>
 
 <template>
@@ -14,7 +18,7 @@
                 <template #header>
                     <div class="flex align-items-center gap-2">
                         <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" shape="circle" />
-                        <span class="font-bold white-space-nowrap"> {{ programas.programa[0] }}</span>
+                        <span class="font-bold white-space-nowrap"> {{ arregloDeProgramas.nombre[0] }}</span>
                       </div>
                 </template>
                 <p class="m-0">
