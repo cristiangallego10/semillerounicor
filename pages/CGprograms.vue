@@ -1,4 +1,5 @@
 <script setup>
+
 const arregloDeProgramas = [
     {
         nombre:"Licenciatura en Informatica",
@@ -19,5 +20,5 @@ const arregloDeProgramas = [
 ]
 </script>
 <template>
-    <CGcomprograms v-for="programaActual in arregloDeProgramas" :programa="programaActual" /> 
-</template>	
+    <CGcomprogramas v-for="programaActual in arregloDeProgramas" :programa="programaActual">
+ </template>	

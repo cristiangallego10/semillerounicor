@@ -1,7 +1,9 @@
-<script>
+<script setup>
 </script>
 <template>
-  <div>PROGRAMAS</div>
-  <Nuxt-Link to="/CGprograms.vue">Go to About Page</Nuxt-Link>
-  <detprograms />
+  <div>
+    <CGcomprogramas/>
+  </div>
+
+
 </template>
