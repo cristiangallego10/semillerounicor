@@ -2,23 +2,37 @@
 
 const arregloDeProgramas = [
     {
-        nombre:"Licenciatura en Informatica",
-        semilleros:[
+        nombre: "Licenciatura en Informatica",
+        semilleros: [
             "AVI",
             "Bimadimo",
             "Lab de IA",
 
         ],
-       
+       CantIntegrantes: "90"
     },
     {
-        nombre:"Licenciatura en ciencias sociales",
+        nombre:"Licenciatura en Educación Artistica",
         semilleros:[
-            "socialboys",
-        ]
+            "EXPRESARTE",
+            "Músicas tradicionales y cultura popular",
+
+        ],
+        CantIntegrantes: "65"
+    },
+    {
+        nombre: "DEPARTAMENTO DE CIENCIAS NATURALES Y EDUCACIÓN AMBIENTAL",
+        semilleros:[
+            "DIDACIEN",
+            "EdAmSis",
+            "GIAM-UNICOR",
+        ],
+        CantIntegrantes: "120"
     }
+    
 ]
 </script>
 <template>
-    <CGcomprogramas v-for="programaActual in arregloDeProgramas" :programa="programaActual">
+    <h1>PROGRAMAS</h1>
+    <CGcomprogramas :arregloDeProgramas="programa"/>
  </template>	

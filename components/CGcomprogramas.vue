@@ -1,21 +1,38 @@
 <script setup>
 
-const props = definirprops({
+const props = defineprops({
     programa: Object
 });
 
 </script>
 
+
 <template>
-    <Card>
-    <template #title>{{ programa.nombre }}</template>
-    <template #content>
-        <h1>semilleros</h1>
-        <p class="m-0">
-         {{ programa.semilleros }}
-        </p>    
-    </template>
-</Card>
+    <h1>programas</h1>
+    <Card style="width: 25rem; overflow: hidden">
+        <template #header>
+            <img alt="user header" src="images/Captura.PNG" />
+        </template>
+        <template #title>PROGRAMA{{ arregloDeProgramas.nombre }}</template>
+        <template #subtitle>Card subtitle</template>
+        <template #content>
+            <p class="m-0">
+               <p v-for="semillero in arregloDeProgramas.semilleros">
+                <p>semillero {{semillero.semilleros}}</p>
+                <p>cantidad de integrantes{{ semillero.CantIntegrantes }}</p>
+               </p>
+            </p>
+            <Divider />
+        </template>
+        <template #footer>
+            
+        </template>
+    </Card>
+</template>
+
+<script setup>
+</script>
+
 
 
 
